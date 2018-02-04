@@ -1,0 +1,26 @@
+   \par {\it 1.megoldás:} Ha $n$ nem négyzetszám, akkor $2k$ osztója melyek
+   párba állíthatóak: $(d_{i},\frac{n}{d_{i}})\ i=1\hdots k$. Ekkor az osztók számtani átlagára:
+   \begin{equation*}
+   \frac{d_{1}+\frac{n}{d_{1}}+\hdots +d_{k}+\frac{n}{d_{k}}}{2k} >
+   {n^{k}}^{\frac{1}{2k}}=\sqrt{n}
+   \end{equation*}
+   adódik az \nameref{AlapAMGMFa} alapján, kihasználva hogy a szereplő osztók különbözőek.
+   \par Ha $n$ négyzetszám, akkor $2k+1$ osztója van. Egy kakukktojás $d=\sqrt{n}$,  
+   nincsen párja. A többieket állítsuk párba mint az előbb. Az átlag ekkor:
+   \begin{equation*}
+   \frac{d+d_{1}+\frac{n}{d_{1}}+\hdots +d_{k}+\frac{n}{d_{k}}}{2k+1} >
+   {(dn^{k})}^{\frac{1}{2k+1}}=\sqrt{n}
+   \end{equation*}
+   Tehát igaz a kérdéses állítás.
+   \par {\it 2.megoldás:} Észrevehetjük, hogy felesleges az esetszétválasztás az 
+   előbbi megoldásban. Legyenek az osztók: $d_{1},\hdots,d_{k}$. Állítsuk párba 
+   $d_{i}$-t $\frac{n}{d_{i}}$-vel $i=1\hdots n$. Képezzük a kapott $2k$ szám átlagát. 
+   Ekkor
+   \begin{equation*}
+   \frac{d_{1}+ \hdots +d_{k}}{k} =
+   \frac{d_{1}+\frac{n}{d_{1}}+\hdots +d_{k}+\frac{n}{d_{k}}}{2k} >
+   {(n^{k})}^{\frac{1}{2k}}=\sqrt{n}
+   \end{equation*}
+   Itt az első egyenlőség azért áll fenn, mert minden osztót pontosan kétszer 
+   vettünk figyelembe, a szigorú egyenlőtlenség pedig azért van mert $n>1$-nak 
+   legalább $2$ különböző osztója van.

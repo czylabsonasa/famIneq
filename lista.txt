@@ -1,0 +1,10 @@
+famlim # Nevezetes egyenlőtlenségek # T
+
+   uno           # Rendezetlen # T
+      1              # Binomiális # F
+      2              # Bernoulli # F
+      3              # Popoviciu: $\sigma\le\frac{R}{2}$ # F
+      4              # Bhatia-Davis: $\sigma^2\le (\mu-m)(M-\mu)$ # F
+   #
+
+#

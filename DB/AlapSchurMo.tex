@@ -1,0 +1,15 @@
+   Az első egyenlőtlenség világos. Második: Vegyük észre, hogy szimmetrikus a kifejezés, 
+   azaz ha $3$ változós $f(a,b,c)$ függvényként tekintünk rá, akkor értéke nem változik ha 
+   ugyanazokat számokat helyettesítjük bele más sorrendben. 
+   Ezért feltehetjuk, hogy $a\ge b\ge c.$
+   Ekkor, csak az első két tagot figyelve (a harmadik $\ge 0$):
+   \begin{align*}
+   a^{r}(a-b)(a-c)+b^{r}(b-a)(b-c)=\\
+   =a^{r}(a-b)(a-c)+b^{r}(b-a)(b-a+a-c)=\\
+   =a^{r}(a-b)(a-c)+b^{r}(b-a)(a-c)+b^{r}(b-a)^{2}=\\
+   =(a-c)(a^{r}-b^{r})(a-b)+b^{r}(b-a)^{2}\ge 0
+   \end{align*}
+   Jegyezzük meg a gyakran használt alakját $r=1$:
+   $$
+   a^{3}+b^{3}+c^{3}+3abc \ge a^{2}(b+c)+b^{2}(a+c)+c^{2}(a+b)
+   $$

@@ -1,0 +1,43 @@
+   Cauchy nevéhez fűződő indukciót használjuk: először belátjuk a 
+   természetes számok egy részsorozatára az állítást, majd igazoljuk hogy 
+   ha $k+1$-re igaz, akkor $k$-ra is teljesül az összefüggés. 
+   $n=2$:
+   $$
+   (\sqrt{a_{1}}-\sqrt{a_{2}})^2 \ge 0 \Longleftrightarrow 
+   \frac{a_{1}+a_{2}}{2} \ge {(a_{1}a_{2})}^{\frac{1}{2}}
+   $$
+   $n=2k$-ra, felhasználva az $n=k$-ra és $n=2$-re igazolt állítást:
+   $$
+   \frac{a_{1}+\hdots+a_{k}+a_{k+1}+\hdots+a_{2k}}{2k} =
+   \frac{\frac{a_{1}+\hdots+a_{k}}{k}+\frac{a_{k+1}+\hdots+a_{2k}}{k}}{2} \ge
+   $$
+   $$
+   \frac{{(a_{1}\hdots a_{k})}^{\frac{1}{k}}+{(a_{k+1}\hdots a_{2k})}^{\frac{1}{k}}}{2}\ge
+   {(a_{1}\hdots a_{k}a_{k+1}\hdots a_{2k})}^{\frac{1}{2k}}
+   $$
+   Tehát $n=2^k$-ra megvagyunk.
+   \newline
+   Most igazoljuk, hogy egy lépést visszafele is meg lehet tenni:
+   $$
+   \frac{a_{1}+\hdots+a_{k}+{(a_{1}\hdots a_{k})}^{\frac{1}{k}}}{k+1} \ge
+   {\left( {(a_{1}\hdots a_{k})}^{1+\frac{1}{k}}\right) }^{\frac{1}{k+1}}
+   $$
+   Ebből átrendezéssel megkapjuk az $n=k$-esetet. 
+   \newline
+   Egyenlőség $n=2$ esetben pontosan akkor van, ha $a_{1}=a_{2}$. Ha 
+   egyenlőek a számok akkor a két oldal megegyezik.
+   Tegyük fel most hogy valamilyen $n=k>2$-ra a két oldal megegyezik, de van 
+   két szám ami különböző, pl.: $a_{1} \neq a_{2}$:
+   $$
+   {(a_{1}\hdots a_{k})}^{\frac{1}{k}}=\frac{a_{1}+a_{2}+...+a_{k}}{k}=
+   $$
+   $$
+   =\frac{\frac{a_{1}+a_{2}}{2}+\frac{a_{1}+a_{2}}{2}+a_{3}+...+a_{k}}{k} \ge
+   {\left( {\left( \frac{a_{1}+a_{2}}{2}\right)}^2 a_{3}...a_{k} \right) }^{\frac{1}{k}} 
+   $$
+   Ebből átrendezéssel azt kapjuk, hogy 
+   $$
+   a_{1}a_{2} \ge {\left( \frac{a_{1}+a_{2}}{2}\right) }^2
+   $$
+   ami csak $a_{1}=a_{2}$ esetén lehetséges. Tehát ha a két oldal megegyezik, akkor a számok
+   csak egyenlőek lehetnek.

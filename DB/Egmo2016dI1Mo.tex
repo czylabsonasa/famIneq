@@ -1,0 +1,27 @@
+%Egmo2016dI1Mo
+\par Osszuk el mindkét oldalt $2$-vel, hogy középértékeket lássunk.
+Az $n=1$ eset nem igényel magyarázatot. 
+\par Képzeljük el a számok négyzeteit egy kör mentén felírva (pl. pozitív körüljárás szerint). 
+Vegyük észre hogy nincsen jelentősége hogy melyik számtól indulunk el körben, csak az a fontos 
+hogy minden szomszédos pár középértékét vegyük figyelembe.
+Ha van két egyforma szomszédos szám, akkor az aktuális középértékek 
+egybeesnek, az $LHS$ csak kisebb lehet, az $RHS$ 
+csak nagyobb így kész vagyunk. Ha van $3$ szomszédos szám melyekre 
+$a<b<c$ akkor $\frac{a+b}{2}<\sqrt{bc}$ miatt $LHS<RHS$,  így újra teljesül az állítás. 
+Hasonlóan gondolhatunk az $a>b>c$ szomszédos számok esetére. Most feltehetjük, hogy nincs 
+$2$ szomszédos egyforma  és nincs $3$ hosszú lánc a kör mentén. Induljunk el a legkisebb 
+$a_1$ számtól valamelyik irányban, ekkor az eddigiek miatt a következőt látjuk:
+$$
+a_{1}< a_{2} > a_{3} < \hdots < a_{1}, 
+$$
+ahol az utolsó $<$ a páratlanság miatt van, de ez lehetetlen. Egy legkisebbhez 
+nem érkezhetünk alulról.
+\par Vegyük észre, hogy a feladatban egy $K$ középérték 
+$\min(a,b)\le K \le \max(a,b)$ tulajdonságán kívül semmit sem használtunk ki, 
+így az a kicsit meglepő állítás is érvényes, hogy:
+$$
+\min_{\Tolig{i=1,}{,n}} K_{i}(x_{i},x_{i+1}) \le
+\max_{\Tolig{j=1,}{,n}} K_{n+j}(x_{i},x_{i+1})
+$$
+ahol $\Tolig{K_{1},}{,K_{2n}}$ középértékek tetszőleges sorozata.
+

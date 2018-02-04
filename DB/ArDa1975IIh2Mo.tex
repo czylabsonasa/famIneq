@@ -1,0 +1,30 @@
+A továbbiakban legyen $k,l>0$ egész, és vezessük be a következő jelölést:
+$$
+(k,l)=a^{k}b^{l} + b^{k}c^{l} + c^{k}a^{l}
+$$
+Ekkor a bizonyítandó állítás: $(6,0) \ge (5,1).$ A következő tulajdonság hasznosnak 
+bizonyul:
+$$
+(k,l) \le \frac{(k-1,l+1)}{2} + \frac{(k+1,l-1)}{2}
+$$
+amit egyszerűen mutat az
+$$
+a^{k}b^{l}=aba^{k-1}b^{l-1}\le \frac{a^{2}+b^{2}}{2}a^{k-1}b^{l-1} = 
+\frac{a^{k+1}b^{l-1}}{2}+\frac{a^{k-1}b^{l+1}}{2}
+$$
+átalakítás ahol az \nameref{AlapAMGMFa}-t használtuk. Becsüljük most ennek 
+segítségével a jobboldalt, először $(5,1)$-et majd $(4,2)$-t
+$$
+(5,1) \le \frac{(4,2)}{2} + \frac{(6,0)}{2} \le
+\frac{(3,3)}{4} + \frac{(5,1)}{4} + \frac{(6,0)}{2}
+$$
+Ezt rendezve
+$$
+3(5,1) \le (3,3) + 2(6,0) 
+$$
+adódik. Viszont a \nameref{FolCik1Fa} azt mondja hogy $(2,0) \ge (1,1)$, 
+amit a harmadik hatványokra alkalmazva $(6,0) \ge (3,3)$, így készen vagyunk.
+
+
+
+

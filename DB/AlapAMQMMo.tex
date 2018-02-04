@@ -1,0 +1,37 @@
+   $n=1$ azonosság. Az $n=2$ eset $0\le \frac{(a_{1}-a_{2})^2}{4}$-val ekvivalens, 
+   melynél az egyenlőség pontosan akkor teljesül ha $a_{1}=a_{2}.$
+   Tegyük fel most, hogy $n=k$-ra megvagyunk és vizsgáljuk az $n=2k$-t:
+   \begin{align*}
+   {\left( \frac{a_{1}+\hdots +a_{k}+a_{k+1}+\hdots +a_{2k}}{2k} \right)}^{2} =
+   {\left( \frac{\frac{a_{1}+\hdots +a_{k}}{k}+\frac{a_{k+1}+\hdots +a_{2k}}{k}}{2} \right)}^{2} \le \\
+   \le 
+   \frac{{\left( \frac{a_{1}+\hdots +a_{k}}{k}\right)}^{2}+
+   {\left( \frac{a_{k+1}+\hdots +a_{2k}}{k}\right)}^{2}}{2} \le
+   \frac{\frac{a_{1}^{2}+\hdots +a_{k}^{2}}{k}+
+   \frac{a_{k+1}^{2}+\hdots +a_{2k}^{2}}{k}}{2} 
+   \end{align*}
+   Itt az első $\le$-nél az $n=2$-es, a másodiknál az $n=k$-s esetet 
+   használtuk ki. Tehát $n=2k$ rendben van. Most a visszalépéssel foglalkozunk. 
+   Tegyük fel hogy valamely $n=k+1,\ (k>1)$-re megvagyunk:
+   \begin{align*}
+   {\left( \frac{a_{1}+\hdots +a_{k}}{k} \right) }^2 &=
+   {\left( \frac{a_{1}+\hdots +a_{k}+\frac{a_{1}+\hdots +a_{k}}{k}}{k+1} \right) }^2 \le \\
+   \le \frac{a_{1}^{2}+\hdots +a_{k}^{2}+
+   {\left( \frac{a_{1}+\hdots +a_{k}}{k} \right)}^2 }{k+1} &\le
+   \frac{a_{1}^{2}+\hdots +a_{k}^{2}+
+   { \frac{a_{1}^2+\hdots +a_{k}^2}{k} }}{k+1} = \frac{a_{1}^2+\hdots +a_{k}^2}{k}
+   \end{align*}
+   Vagyis $k+1$-ről vissza tudunk lépni $k$-ra.
+   \par Ha $a_{i}=a_{j}$ minden $i,j$-re akkor látjuk hogy egyenlőség van. 
+   Tegyük fel most, hogy egyenlőség van valamilyen $k>2$-re, 
+   de van két különböző számink: pl. $a_{1}\neq a_{2}.$
+   Ekkor, ha kicseréljuk őket $\frac{a_{1}+a_{2}}{2}$-re, az 
+   átlag nem változik:
+   \begin{align*}
+   \frac{a_{1}^2+a_{2}^2+\hdots +a_{k}^2}{k}\le
+   \frac{2{\left( \frac{a_{1}+a_{2}}{2}\right)}^2+\hdots a_{3}^2+a_{k}^2}{k} \Leftrightarrow
+   \frac{a_{1}^2+a_{2}^2}{2} \leq {\left( \frac{a_{1}+a_{2}}{2}\right)}^2
+   \end{align*}
+   \newline
+   Ez csak $a_{1}=a_{2}$ esetén lehet. Tehát az AM és QM egyenlősége 
+   implikálja a számok egyenlőségét.

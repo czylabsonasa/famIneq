@@ -1,0 +1,21 @@
+%FolProd1Mo
+A \nameref{AlapBerFa} alapján:
+$$
+LHS \ge 1 - \Gzjel{ \Tolig{\frac{1}{2^{3}}+}{+\frac{1}{n^{3}}}},
+$$
+ezért 
+$S=\Tolig{\frac{1}{2^{3}}+}{+\frac{1}{n^{3}}}$ felső becslésével póbálkozunk.
+Legyen $n\ge 3.$ Mivel: 
+\begin{align*}
+\frac{1}{k^{3}} < \frac{1}{(k-1)k(k+1)}=\frac{1}{2(k-1)} - \frac{1}{k} + \frac{1}{2(k+1)},
+\end{align*}
+ezért
+\begin{align*}
+S = \frac{1}{2} \sum_{i=1}^{n-1} \frac{1}{k} - \sum_{i=2}^{n} \frac{1}{k} + 
+\frac{1}{2} \sum_{i=3}^{n+1} \frac{1}{k} = \\
+= \frac{1}{2}\Gzjel{\frac{1}{1}+\frac{1}{2}}-
+\Gzjel{\frac{1}{2}+\frac{1}{n}}+\frac{1}{2}\Gzjel{\frac{1}{n}+\frac{1}{n+1}}=\\
+= \frac{1}{4}+\frac{1}{2}\Gzjel{\frac{1}{n+1}-\frac{1}{n}}<\frac{1}{4}.
+\end{align*}
+
+

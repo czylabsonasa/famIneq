@@ -1,0 +1,30 @@
+   $y_{i}=|x_{i}|$ helyettesítéssel írjuk fel az eredeti rendszert:
+   \begin{align*}
+   \sum_{i=1}^{n} y_{i} &= \sum_{i=1}^{n} y_{i}^{3} \\
+   \sum_{i=1}^{n} y_{i} &= \sum_{i=1}^{n} \frac{2y_{i}^{3}}{y_{i}^{2}+1}.
+   \end{align*}
+   alakban. Ekkor: 
+   \begin{align*}
+   2\sum_{i=1}^{n} y_{i} = \sum_{i=1}^{n} y_{i} + \sum_{i=1}^{n} y_{i}^{3} &=
+   \sum_{i=1}^{n} y_{i}(y_{i}^{2}+1)= \\
+   =\sum_{i=1}^{n} \frac{4y_{i}^{3}}{y_{i}^{2}+1} &=
+   \sum_{i=1}^{n} 4y_{i}{\left( \frac{y_{i}^{2}}{y_{i}^{2}+1} \right) }
+   \end{align*}
+   Amiből:
+   \begin{align*}
+   0=\sum_{i=1}^{n} y_{i}(y_{i}^{2}+1)-
+   \sum_{i=1}^{n} 4y_{i}{\left( \frac{y_{i}^{2}}{y_{i}^{2}+1} \right)}= \\
+   =\sum_{i=1}^{n} y_{i}\left( (y_{i}^{2}+1)-4{\left( 1-\frac{1}{y_{i}^{2}+1} \right)} \right) = \\
+   =\sum_{i=1}^{n} y_{i}\left( (y_{i}^{2}+1)+\frac{4}{y_{i}^{2}+1} - 4 \right)
+   \end{align*}
+   \nameref{AlapAMGMFa} azt mondja, hogy 
+   \begin{equation*}
+   (y_{i}^{2}+1)+\frac{4}{y_{i}^{2}+1} \ge 4 
+   \end{equation*}
+   és egyenlőség csak $y_{i}=1$ esetben lehet ($y_{i}\ge 0$!). Összefoglalva nemnegatív tagokból álló
+   \begin{equation*}
+   \sum_{i=1}^{n} y_{i}\left( (y_{i}^{2}+1)+\frac{4}{y_{i}^{2}+1} - 4 \right)
+   \end{equation*}
+   összeg nulla, ami csak úgy lehet ha minden tagja nulla ekkor: 
+   $y_{i}=0 \implies x_{i}=0$ vagy $y_{i}=1 \implies x_{i}=+1,-1$ esetben lehet. Látható hogy 
+   minden ilyen $x_{i}$ rendszer tényleg megoldás. (összesen $3^n$ ilyen rendszer van.)

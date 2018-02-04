@@ -1,0 +1,21 @@
+%AlapRearrMo
+Foglalkozzunk a jobboldali egyenlőtelenséggel:
+$$
+\sum_{i=1}^{n} a_{i}b_{\varphi(i)} \le \sum_{i=1}^{n} a_{i}b_{i}
+$$
+Most $n-1$ lépésben átalakítjuk a $\varphi$ permutációt az identikusra.
+Jelentse $(a_{i},b_{j})$ azt hogy az aktuális sorrendben $a_{i}$ és 
+$b_{j}$ {\it párok} a összegben. Legyen $k\ge 1$, és tegyük fel, 
+hogy már megtettünk $k-1$ lépést, azaz $(a_{i},b_{i})$ 
+teljesül $k=\Tolig{1,}{,k-1}$ (ez az első lépés előtt teljesül (üres halmaz)).
+$(a_{k},b_{i})$-ben ha $k=i$ akkor továbbmegyünk a következő lépésre.
+Egyébként $b_{i}\ge b_{k}$ és $i>k$ a feltevések miatt, és $(a_{j},b_{k})$ valamely $j>i$-re. 
+Cseréljük fel $b_{i}$-t és $b_{k}$-t, ekkor az összeg változása:
+$$
+-a_{k}b_{i}+a_{k}b_{k} - a_{j}b_{k} + a_{j}b_{i}=
+(a_{k}-a_{j})(b_{k} - b_{i}) \ge 0,
+$$
+tehát az aktuális összeget nem csökkentjük, amikor a leírt módon egy új 
+elemet a helyére viszünk.
+\par A bal oldali egyenlőtlenséghez eljuthatunk a fenti módon, vagy alkalmazzuk 
+a jobboldali egyenlőtlenséget a $c_{i}=-b_{i}$ sorozatra.

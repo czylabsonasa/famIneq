@@ -1,0 +1,14 @@
+   Érdemes mindig az "elejét" megnézni, hogy rendben van-e:
+   $n=1$-re az állítás: $\sqrt{1}<\sqrt{1}+1$.
+   $n=2$-re az állítás: $\sqrt{2+\sqrt{1}}<\sqrt{2}+1$.
+   $n=k+1$-et vizsgáljuk, ahol $k>0$, 
+   \begin{equation*}   
+   \sqrt{ k+1 + \sqrt{ k + \hdots  +\sqrt{ 2 + \sqrt{1} } } } < 
+   \sqrt{ k+1 + \sqrt{k}+1 }  
+   \end{equation*}   
+   Itt a becslésnél az indukciós feltevést és a négyzetgyök függvény 
+   monotonitását használtuk. Végül a keresett
+   \begin{equation*}   
+   \sqrt{ k+1 + \sqrt{k}+1 } < \sqrt{k+1}+1
+   \end{equation*}
+   fennállását pl. négyzetre-emeléssel igazoljuk.

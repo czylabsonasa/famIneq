@@ -1,0 +1,25 @@
+%AlapCBS
+Ha $a_{i}$ vagy $b_{i}$ csupa nulla számokból áll, akkor rendben vagyunk, 
+ezért feltesszük az ellenkezőjét. Tekintsük az
+\begin{equation}
+p(x)=\sum_{i=1}^{n} \Gzjel{ a_{i}-b_{i}x }^2
+\label{cbs:def:p}\tag{def:p}
+\end{equation}
+másodfokú polinomot. Ha elvégezzük a négyzetreemelést, akkor
+\begin{align*}
+p(x)=\sum_{i=1}^{n} \Gzjel{ a_{i}^{2}-2b_{i}a_{i}x + b_{i}^{2}x^{2} }=\\
+= \Gzjel{\sum_{i=1}^{n}b_{i}^{2}}x^{2} -2\Gzjel{ \sum_{i=1}^{n}b_{i}a_{i}}x +\sum_{i=1}^{n} a_{i}^{2} =
+Ax^{2}-Bx+C
+\end{align*}
+megfelelő $A>0,B,C>0$ valós számokkal. Mivel $p\ge 0$ és felírható
+$$
+A\Gzjel{ \Gzjel{ x+\frac{B}{2A}}^2 + \frac{4AC-B^{2}}{4A^{2}} }
+$$
+alakban, ezért $4AC-B^{2}$ nem lehet negatív (ekkor $x=-\frac{B}{2A}$-nál negatív lenne $p$).
+A $4AC-B^{2}\ge 0$ éppen a nevezetes egyenlőtlenség. 
+\par Ha $a_{i}=\lambda b_{i}$ akkor behelyettesítéssel meggyőződhetünk róla hogy 
+egyenlőség áll fenn. Tegyük fel most, hogy egyenlőségünk van. Ekkor 
+$p(x)=\Gzjel{ x+\frac{B}{2A}}^2$, azaz $p(-\frac{B}{2A})=0$, viszont $p$ 
+csak úgy lehet nulla ha (\ref{cbs:def:p})-ben minden tag nulla, 
+vagyis $\lambda=-\frac{B}{2A}$ választással teljesül az állítás egyenlőséges része is. 
+(egyértelműség?)

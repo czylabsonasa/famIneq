@@ -1,0 +1,58 @@
+%Krs19612Mo
+%A következő általános észrevételeket használjuk: 
+%\par Legyen $x,y,z$  pozitív valós. Ha $xy>z>0$, akkor valamelyik nagyobb mint 
+%$\sqrt{z}$.. Ha $xy>z$ és $x<\sqrt{z}$, akkor $y>\sqrt{z}$.
+%\par Tegyük fel hogy mindannyian nagyobbak mint $\frac{1}{4}.$
+%Ha $(1-a)b>\frac{1}{4}$, akkor $1-a>\frac{1}{2}$ vagy $b>\frac{1}{2}$. 
+%Az első esetben a következő láncunk van:
+%$$
+%1-a>\frac{1}{2} \implies a<\frac{1}{2} \implies 1-c>\frac{1}{2} \implies 
+%c < \frac{1}{2} \implies b < \frac{1}{2}.
+%$$
+%A másodikban:
+%$$
+%b>\frac{1}{2} \implies c > \frac{1}{2} \implies a > \frac{1}{2}.
+%$$
+%Tehát a feltételekből azt kapjuk hogy vagy mindannyian kisebbek, vagy mindannyian 
+%nagyobbak $\frac{1}{2}$-nél. Ha mindannyian kisebbek, akkor:
+%$$
+%a=\frac{1}{2}-\delta_{a},\ b=\frac{1}{2}-\delta_{b},\ c=\frac{1}{2}-\delta_{c},
+%$$
+%pozitív $\delta_{*}$  valósokkal.
+
+A számok felírhatók
+$$
+a=\frac{1}{2}+\delta_{a},\ b=\frac{1}{2}+\delta_{b},\ c=\frac{1}{2}+\delta_{c},
+$$
+alakban, alkalmas $-\frac{1}{2}<\delta_{a},\delta_{b},\delta_{c}<\frac{1}{2}$ 
+valós számokkal. Tegyük fel hogy mindannyian nagyobbak mint $\frac{1}{4}.$
+Ekkor:
+\begin{align*}
+(1-a)b=\Gzjel{\frac{1}{2}-\delta_{a}}\Gzjel{\frac{1}{2}+\delta_{b}}=\\ 
+= \frac{1}{4}+\frac{\delta_{b}-\delta_{a}}{2}-\delta_{a}\delta_{b}>\frac{1}{4} 
+\Leftrightarrow \delta_{b} > \delta_{a} + 2\delta_{a}\delta_{b}
+\end{align*}
+hasonlóan az $(1-b)c$ és $(1-c)a$ kifejezésekre:
+\begin{equation}
+\label{orig}
+\tag{orig}
+\begin{split}
+\delta_{b} &> \delta_{a} + 2\delta_{a}\delta_{b} \\
+\delta_{c} &> \delta_{b} + 2\delta_{b}\delta_{c} \\
+\delta_{a} &> \delta_{c} + 2\delta_{a}\delta_{c}.
+\end{split}
+\end{equation}
+%Ha valamelyik szám, pl. $a=\frac{1}{2}$, azaz $\delta_{a}=0$, akkor:
+%$$
+%\delta_{b}>0,\ 0>\delta_{c}=\delta_{b}(1+2\delta_{c}) \implies 
+%\delta<-\frac{1}{2},
+%$$
+%ami lehetetlen. Feltehetjuk tehát, hogy 
+Ezeket átrendezve, felhasználva $1-2\delta_{x}>0, \ x=a,b,c$-re, kapjuk hogy:
+\begin{align*}
+\delta_{b} &> \frac{\delta_{a}}{1 - 2\delta_{a}} \\
+\delta_{c} &> \frac{\delta_{b}}{1 - 2\delta_{b}} \\
+\delta_{a} &> \frac{\delta_{c}}{1 - 2\delta_{c}}.
+\end{align*}
+Innen könnyen látható, hogy a $\delta_{x}$-ek egyforma előjelűek. Ekkor (\ref{orig})-ot 
+szemrevételezve: $\delta_{b}>\delta_{a}>\delta_{c}>\delta_{b}$ ellentmondásra jutunk.
