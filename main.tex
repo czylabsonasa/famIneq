@@ -1,17 +1,9 @@
 
 %usepackage es egyebek
-\input{common/globdef.tex}
+\input{common/alldef.tex}
 
-%zarojel, FA...
-\input{common/matdef.tex}
-
-% rövidítések
-\input{common/szavakdef.tex}
-
-% tcolorbox-al kapcsolatos
-\input{common/tcboxdef.tex}
-
-\begin{document}\begin{spacing}{1.2}
+\begin{document}\begin{spacing}{1.4}
+\pagecolor{BGSZ}
 
 \section*{Nevezetes egyenlőtlenségek} \label{DB}
 \nameref{DBuno}
@@ -24,6 +16,8 @@
 \nameref{DBuno3}
 \newline
 \nameref{DBuno4}
+\newline
+\nameref{DBuno5}
 \vspace{0.5cm}
 \LINK{
 \hfill\nameref{DB}
@@ -106,6 +100,26 @@
 \vspace{0.5cm}
 \LINK{
 \nameref{DBuno4}
+\hfill\nameref{DBuno}
+}
+\newpage
+\section*{\mtit{Fa}Bhatia-Davis alsó becslés} \label{DBuno5}
+\Fa{
+\input{DB/uno/5Fa}
+}
+\vspace{0.5cm}
+\LINK{
+\nameref{DBuno5Mo}
+\hfill\nameref{DBuno}
+}
+\newpage
+\section*{\mtit{Mo}Bhatia-Davis alsó becslés} \label{DBuno5Mo}
+\Mo{
+\input{DB/uno/5Mo}
+}
+\vspace{0.5cm}
+\LINK{
+\nameref{DBuno5}
 \hfill\nameref{DBuno}
 }
 \newpage
